@@ -1,5 +1,5 @@
 body {
-  background-color: #471D69;
+  background-color: #4e356f;
 }
 
 .head-wrap {
@@ -733,3 +733,7 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.new_class_p{
+  padding: 0% 0 !important;
+}

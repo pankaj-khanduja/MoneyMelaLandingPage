@@ -97,6 +97,24 @@ const Landing = () => {
     };
    
 
+    const downloadsliderd = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1.
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1.
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1.
+        }
+    };
+
     const Testimonialresponsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -275,20 +293,53 @@ const Landing = () => {
             <Container>
                 <div className="download-caros">
                     <h4 className="yellow-txt">how to download</h4>
-                    <div className="caros-card ">
-                        <img src={Download1} />
-                        <div className="text-box">
-                            <span className="d-head">
-                                <div><img src={AlertIcon} /></div>
-                                <div><h5>File might be harmful</h5></div>
-                            </span>
-                            <p>Do you want to download MoneyMela.apk anyway?</p>
-                            <div className="btn-sec">
-                                <Button variant="primary">Cancel</Button>
-                                <Button variant="primary" className="zoom-btn">Download Anyway</Button>
-                            </div>
-                        </div>
+                    <Container>
+                    <div className="testimonial-caros new_class_p">
+                        {/* <div className="t-quote"></div> */}
+                        {/* <h4 className="yellow-txt">testimonials</h4> */}
+                        <Carousel
+                            swipeable={true}
+                            draggable={false}
+                            showDots={true}
+                            responsive={downloadsliderd}
+                            ssr={true} // means to render carousel on server-side.
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={5000}
+                            keyBoardControl={true}
+                            customTransition="all 1.2s ease 0s"
+                            transitionDuration={1000}
+                            containerClass="carousel-container carousel-list"
+                            removeArrowOnDeviceType={["tablet", "mobile"]}
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-40-px"
+                            slidesToSlide="1"
+                            arrows={true}
+                        >
+
+                            
+                            <img className="silder_image2" src={BannerMos} />
+                          
+                            
+                            <img className="silder_image2" src={BannerMos2} />
+                            
+                           
+                            <img className="silder_image2" src={BannerMos3} />
+                           
+                           
+                            <img className="silder_image2" src={BannerMos4} />
+                            
+                            
+                            <img className="silder_image2" src={BannerMos5} />
+                           
+                            
+                            <img className="silder_image2" src={BannerMos6} />
+                            
+                            
+                        </Carousel>
+                        {/* <div className="b-quote"></div> */}
                     </div>
+                </Container>
                     {/* <Carousel
                         swipeable={true}
                         draggable={false}
@@ -432,7 +483,6 @@ const Landing = () => {
                     <div className="bottom-sec">
                         <img src={MoneyLogo} className="bot-logo" />
                         <div className="d-flex social-icon">
-
                             <div><a href="https://www.facebook.com/moneymela"><img  src={FbIcon} /></a></div>
                             <div><a href="https://www.instagram.com/moneymela.india/"><img src={InIcon} /></a></div>
                             <div><a href="mailto:admin@moneymelagames.com"><img src={MailIcon} /></a></div>

@@ -45,3 +45,14 @@
     width: 88%;
   }
 }
+
+.silder_image2{
+  width: 40%;
+  position: relative;
+  top: -35px !important;
+}
+@media (max-width:767px) {
+  .silder_image2{
+    width: 88%;
+  }
+}
