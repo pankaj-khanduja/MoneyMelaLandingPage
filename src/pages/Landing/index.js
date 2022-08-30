@@ -168,7 +168,7 @@ const Landing = () => {
                     </div>
                     <div className="d-flex">
                         <div className="app-img">
-                            <a href="https://firebasestorage.googleapis.com/v0/b/money-mela.appspot.com/o/moneymela.apk?alt=media&token=83c5099d-a251-4e6c-b4b9-bccee8d775d7">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/money-mela.appspot.com/o/monelamelarelease.apk?alt=media&token=2e3f6368-e367-4ee3-ae00-6f4ad6254440">
                                 {/* https://drive.google.com/file/d/1bZbduYX2CfMSIl-tp1GPVi3uXRK0Zbrd/view?usp=sharing */}
                                 <img onClick={handleOpen} src={AndroidImg} />
                             </a>
