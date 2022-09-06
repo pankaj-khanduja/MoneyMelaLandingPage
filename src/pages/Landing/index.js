@@ -168,12 +168,9 @@ const Landing = () => {
                     </div>
                     <div className="d-flex">
                         <div className="app-img">
-                            <a href="https://firebasestorage.googleapis.com/v0/b/money-mela.appspot.com/o/app-releaseNewServer.apk?alt=media&token=8eacf636-80e9-43d3-a6ac-1a5751e69541">
-                                {/* https://drive.google.com/file/d/1bZbduYX2CfMSIl-tp1GPVi3uXRK0Zbrd/view?usp=sharing */}
-                                <img onClick={handleOpen} src={AndroidImg} />
-                            </a>
+                           
                             <a href="https://apis.sharechat.com/a1s-s2s-service/v1/events/moneymelagames/post?clickId=333&gaid=333&campaignName=testing&adId=121&userId=1233&EventTime=14:23:44&eventName=install&eventValue=1">
-                            </a>
+                            <img onClick={handleOpen} src={AndroidImg} /></a>
                         </div>
                         <div className="app-img">
                             <img src={iOSImg} />
