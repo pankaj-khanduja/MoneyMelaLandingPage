@@ -57,13 +57,7 @@ const style = {
 
 const Landing = () => {
     let navigate = useNavigate();
-    axios.post('https://apis.sharechat.com/a1s-s2s-service/v1/events/moneymelagames/post?clickId=333&gaid=333&campaignName=testing&adId=121&userId=1233&EventTime=14:23:44&eventName=install&eventValue=1')
-    .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+   
       const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
