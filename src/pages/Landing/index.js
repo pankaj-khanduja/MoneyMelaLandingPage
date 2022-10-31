@@ -58,7 +58,7 @@ const Landing = () => {
     let navigate = useNavigate();
    
       const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
+    const handleOpen = () => {  window.LoadData(); setOpen(true);}
     const handleClose = () => setOpen(false);
     const responsive = {
         desktop: {
